@@ -357,7 +357,7 @@ def get_child_windows():
     child_list = []
     win32gui.EnumChildWindows(WINDOW_ID,lambda hwnd,param:param.append(hwnd),child_list)
     for _suspect_target in child_list:
-        if win32gui.GetWindowText(_suspect_target) == "BlueStacks Android PluginAndroid":
+        if "BlueStacks Android PluginAndroid" in win32gui.GetWindowText(_suspect_target) or "plrNativeInputWindow" in win32gui.GetWindowText(_suspect_target):
             MAINWINDOW_ID1 = _suspect_target
         if win32gui.GetWindowText(_suspect_target) == "_ctl.Window":
             MAINWINDOW_ID2 = _suspect_target
