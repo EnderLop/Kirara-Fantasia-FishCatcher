@@ -1,0 +1,4 @@
+{
+'CLICKABLE_WINDOW_CLASS':('BlueStacks Android PluginAndroid','BlueStacks Android PluginAndroid_1','BlueStacks Android PluginAndroid_2','BlueStacks Android PluginAndroid_3','BlueStacks Android PluginAndroid_4','BlueStacks Android PluginAndroid_5','HD-Player','plrNativeInputWindow'),
+'MONITOR_WINDOW_CLASS':('_ctl.Window','HD-Player','ScreenBoardClassWindow','sub')
+}
