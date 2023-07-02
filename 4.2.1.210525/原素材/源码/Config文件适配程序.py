@@ -1,8 +1,8 @@
-#Config文件适配程序Ver2.0
+# Config文件适配程序
 # -*- coding: utf-8 -*-
-#@author:EnderLop
+# @author:EnderLop
 import win32gui
-from os import getcwd,system
+from os import getcwd, system
 from time import sleep
 
 
@@ -20,7 +20,7 @@ sleep(2)
 print("\a请在三秒内将模拟器作为活动窗口")
 sleep(3)
 file_road = getcwd() + "\\Config.txt"
-with open(file_road,"w",encoding = "utf-8") as config_file:
+with open(file_road, "w", encoding = "utf-8") as config_file:
     config_file.write(construction())
 system("cls")
 input("\a配置完成,输入任何字符以结束：\n")
